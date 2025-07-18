@@ -1,0 +1,22 @@
+body {
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #FFF9F0;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+}
+
+h1 {
+    font-style: bold;
+    color: #ffffff;
+    text-align: center;
+}
