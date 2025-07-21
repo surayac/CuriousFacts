@@ -88,7 +88,14 @@ Este proyecto forma parte de un desarrollo ágil en equipo, donde practicamos bu
 
 ## 🧑‍💻 Nuestro Equipo
 
-*(Puedes incluir los nombres y roles si es un trabajo en grupo)*
+🧠 [Andrea Olivera](https://github.com/andreaonweb)  
+Product Owner y Desarrolladora Web
+
+🧠 [Suraya Mattar](https://github.com/surayac)  
+Scrum Master y Desarrolladora Web
+
+🧠 [Paola Pulga](https://github.com/Pao-Pul)  
+Desarrolladora Web
 
 ---
 
