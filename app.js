@@ -11,9 +11,9 @@ const moon = document.getElementById("moon");
 
 // Imágenes de la luna 
 const moonImages = [
-  "Assets/img/full-moon.jpg",
-  "Assets/img/half-moon.jpg",
-  "Assets/img/crescent-moon.jpg"
+  "Assets/img/Luna1.jpg",
+  "Assets/img/Luna2.jpg",
+  "Assets/img/Luna3.jpg"
 ];
 
 let currentImage = 0;
