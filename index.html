@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-     <h1>CURIOUS FACTS</h1>
-    <main class="container">
-        <h2>Sabías que...?</h2>
+    <main class="container-luna">
+        <h1>CURIOUS FACTS</h1>
+    <section class="container">
+        <h2>Did you know?</h2>
+        <section class ="curiousfact">
+            <p id="fact">Haz clic en "Refresh" para ver un dato curioso</p>
+             <section class="buttons"><button class="button" id="btnRefresh">Refresh</button> <button class="button" id="btnFavorite">Favorite</button></section>
+    </section>
+           <section>
+            <h3>Favorites ⭐</h3>
+            <ul id="favorites-list"></ul>
+    </section>
+
+           </section>
        
-        <button>Refresh</button> <button>Favorite</button>
-    </main>
-    
+     </main>
+     <script src="./app.js"></script>
 </body>
 </html>
