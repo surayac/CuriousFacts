@@ -1,15 +1,5 @@
 console.log("Hello world");
 
-//const URL = "https://uselessfacts.jsph.pl/api/v2/facts/random"
-
-//fetch(URL)
-//.then(res => res.json())
-//.then (data => {
-  //  const btnRefresh = document,QuerySelector(btnRefresh)
-    //btnRefresh = data[0].url;
-//} );
-
-
 let currentFact = "";
 let favorites = [];
 
@@ -17,43 +7,68 @@ const factElement = document.getElementById("fact");
 const btnRefresh = document.getElementById("btnRefresh");
 const btnFavorite = document.getElementById("btnFavorite");
 const favoritesList = document.getElementById("favorites-list");
+const moon = document.getElementById("moon");
 
-// Función para traer dato desde la API
+// Imágenes de la luna 
+const moonImages = [
+  "Assets/img/full-moon.jpg",
+  "Assets/img/half-moon.jpg",
+  "Assets/img/crescent-moon.jpg"
+];
+
+let currentImage = 0;
+
+// Obtener dato curioso desde la API
 function getFact() {
-    fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
-        .then(response => response.json())
-        .then(data => {
-            currentFact = data.text;
-            console.log(data.text);
-            factElement.textContent = currentFact;
-        })
-        .catch(error => {
-            console.error("Error al obtener el dato:", error);
-            factElement.textContent = "No se pudo cargar el dato 😢";
-        });
-}
-
-// Función para guardar como favorito
-function saveFavorite() {
-    if (currentFact && !favorites.includes(currentFact)) {
-        favorites.push(currentFact);
-        renderFavorites();
-    }
-}
-
-// Función para mostrar los favoritos
-function renderFavorites() {
-    favoritesList.innerHTML = "";
-    favorites.forEach((fact, index) => {
-        const li = document.createElement("li");
-        li.textContent = `${index + 1}. ${fact}`;
-        favoritesList.appendChild(li);
+  fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
+    .then(response => response.json())
+    .then(data => {
+      currentFact = data.text;
+      console.log(data.text);
+      factElement.textContent = currentFact;
+    })
+    .catch(error => {
+      console.error("Error al obtener el dato:", error);
+      factElement.textContent = "No se pudo cargar el dato 😢";
     });
 }
 
-// Eventos
-btnRefresh.addEventListener("click", getFact);
+// Guardar como favorito
+function saveFavorite() {
+  if (currentFact && !favorites.includes(currentFact)) {
+    favorites.push(currentFact);
+    renderFavorites();
+  }
+}
+
+// Mostrar lista de favoritos
+function renderFavorites() {
+  favoritesList.innerHTML = "";
+  favorites.forEach((fact, index) => {
+    const li = document.createElement("li");
+    li.textContent = `${index + 1}. ${fact}`;
+    favoritesList.appendChild(li);
+  });
+}
+
+// Evento al hacer clic en "Next Fact"
+btnRefresh.addEventListener("click", () => {
+    
+  // Transición de la luna
+  moon.classList.add("fade-out");
+
+  setTimeout(() => {
+    currentImage = (currentImage + 1) % moonImages.length;
+    moon.style.backgroundImage = `url('${moonImages[currentImage]}')`;
+    moon.classList.remove("fade-out");
+  }, 500);
+
+  // Mostrar nuevo dato curioso
+  getFact();
+});
+
+// Evento "Like Quote"
 btnFavorite.addEventListener("click", saveFavorite);
 
-// Mostrar uno al cargar la página
+// Mostrar un dato al cargar
 getFact();
