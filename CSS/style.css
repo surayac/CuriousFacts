@@ -1,22 +1,69 @@
 body {
-    background-color: #000;
-    font-family: 'Courier New', Courier, monospace;
+background-color: #000;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.container-luna {
+display: flex;
+flex-direction: column;               
+justify-content: flex-start;     
+align-items: center;  
+background-image: url("/assets/img/luna.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+height: 100vh;
 }
 
 .container {
-    display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: #FFF9F0;
-  padding: 2rem;
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1200px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: #FFF9F0 ;
+opacity: 0.9;
+padding: 2rem;
+margin: 18rem auto;
+width: 85%;
+max-width: 1200px;
 }
 
 h1 {
-    font-style: bold;
-    color: #ffffff;
-    text-align: center;
+font-style: bold;
+color: #FDD017;
+text-align: center;
+margin-bottom: 5rem;
+
+}
+
+h2 {
+text-align: center;
+}
+
+.buttons {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.4rem;
+background-color: #FFF9F0;
+padding: 1rem;
+margin: 0 auto;
+width: 90%;
+max-width: 1200px;
+}
+
+.button {
+background-color: #000;
+font-size: 1em;
+border: none;
+padding: 10px 20px;
+margin-bottom: 1em;
+cursor: pointer;
+color: white; 
+}
+
+.button:hover {
+background-color: rgb(61, 59, 59);
+color: #ffffff;
+transform: scale(1.05);
+transition: transform 0.3s ease;
 }
