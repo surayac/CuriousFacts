@@ -69,7 +69,7 @@ Este proyecto forma parte de un desarrollo ágil en equipo, donde practicamos bu
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/useless-facts-app.git
+   git clone https://github.com/surayac/CuriousFacts.git
    ```
 
 2. Abre la carpeta en Visual Studio Code.
