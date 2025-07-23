@@ -22,9 +22,6 @@ function getFact() {
     .then(data => {
       currentFact = data.text;
       factElement.textContent = currentFact;
-    })
-    .catch(error => {
-    factElement.textContent = "Fact could not be loaded";
     });
 }
 
@@ -39,23 +36,23 @@ function showFavorites() {
 }
 
 function router(){
-    const hash = window.location.hash;
+  const hash = window.location.hash;
 
-    if (hash === "#favorites") {
-        showFavorites();
-    } else {
-        showHome();
-    }
+  if (hash === "#favorites") {
+    showFavorites();
+  } else {
+    showHome();
+  }
 }
 
 function saveFavorite() {
   if (currentFact && !favorites.includes(currentFact)) {
-    favorites.push(currentFact);
-    localStorage.setItem('favorites', JSON.stringify(favorites));
-    alert("Fact was successfully saved as a favorite!");
-    renderFavorites();
-    } else 
-    alert("You already saved this fact!");
+  favorites.push(currentFact);
+  localStorage.setItem('favorites', JSON.stringify(favorites));
+  alert("Fact was successfully saved as a favorite!");
+  renderFavorites();    
+  } else 
+  alert("You already saved this fact!");
 }
 
   function renderFavorites() {

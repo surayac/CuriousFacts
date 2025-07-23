@@ -75,7 +75,7 @@ justify-content: space-between;
 align-items: center;
 padding: 6px;
 border-bottom: 1px solid #ccc;
-font-size: 16px;
+font-size: 25px;
 }
 
 .fact-text {
@@ -121,6 +121,7 @@ padding: 1rem;
 margin: 0 auto;
 width: 90%;
 max-width: 1200px;
+font-family: 'Courier New', Courier, monospace;
 }
 
 .button {
@@ -130,7 +131,7 @@ border: none;
 padding: 10px 20px;
 margin-bottom: 1em;
 cursor: pointer;
-color: white; 
+color: white;
 }
 
 .button:hover {
