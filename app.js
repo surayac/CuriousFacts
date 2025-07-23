@@ -4,6 +4,7 @@ let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 const factElement = document.getElementById("fact");
 const btnRefresh = document.getElementById("btnRefresh");
 const btnFavorite = document.getElementById("btnFavorite");
+const btnDelete = document.createElement ("span");
 const favoritesList = document.getElementById("favorites-list");
 const moon = document.getElementById("moon");
 
@@ -51,15 +52,35 @@ function saveFavorite() {
   if (currentFact && !favorites.includes(currentFact)) {
     favorites.push(currentFact);
     localStorage.setItem('favorites', JSON.stringify(favorites));
+    alert("Fact was successfully saved as a favorite!");
     renderFavorites();
-    }
+    } else 
+    alert("You already saved this fact!");
 }
 
-function renderFavorites() {
+  function renderFavorites() {
   favoritesList.innerHTML = "";
   favorites.forEach((fact, index) => {
     const li = document.createElement("li");
-    li.textContent = `${index + 1}. ${fact}`;
+    li.classList.add("favorite-item");
+
+    const factText = document.createElement("span");
+    factText.textContent = `${index + 1}. ${fact} `;
+    factText.classList.add("fact-text");
+
+    const deleteBtn = document.createElement("span");
+    deleteBtn.innerHTML = `<i class="fas fa-trash"></i>`;
+    deleteBtn.classList.add("delete-icon");
+
+
+    deleteBtn.addEventListener("click", () => {
+    favorites.splice(index, 1);
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+      renderFavorites();
+    });
+
+    li.appendChild(factText)
+    li.appendChild(deleteBtn);
     favoritesList.appendChild(li);
   });
 }
