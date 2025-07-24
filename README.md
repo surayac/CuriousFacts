@@ -82,7 +82,7 @@ Este proyecto forma parte de un desarrollo ágil en equipo, donde practicamos bu
 
 ## 📸 Capturas del Proyecto
 
-> *(Aquí puedes añadir imágenes si tienes diseños o screenshots para mostrar)*
+<img width="1920" height="1020" alt="Captura de pantalla 2025-07-24 092135" src="https://github.com/user-attachments/assets/97b1074d-5063-48e6-ae8d-bc94fe307c49" />  <img width="1920" height="1020" alt="Captura de pantalla 2025-07-24 092033" src="https://github.com/user-attachments/assets/dd9cb815-dfb7-4e74-b5f3-9a1850fa4ba1" />
 
 ---
 
@@ -95,6 +95,9 @@ Product Owner y Desarrolladora Web
 Scrum Master y Desarrolladora Web
 
 🧠 [Paola Pulga](https://github.com/Pao-Pul)  
+Desarrolladora Web
+
+🧠 [Jashaira Lezcano](https://github.com/JMileny89)  
 Desarrolladora Web
 
 ---
