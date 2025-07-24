@@ -80,9 +80,10 @@ Este proyecto forma parte de un desarrollo ágil en equipo, donde practicamos bu
 
 ---
 
+
 ## 📸 Capturas del Proyecto
 
-<img width="1920" height="1020" alt="Captura de pantalla 2025-07-24 092135" src="https://github.com/user-attachments/assets/97b1074d-5063-48e6-ae8d-bc94fe307c49" />  <img width="1920" height="1020" alt="Captura de pantalla 2025-07-24 092033" src="https://github.com/user-attachments/assets/dd9cb815-dfb7-4e74-b5f3-9a1850fa4ba1" />
+<img width="468" height="229" alt="Captura de pantalla 2025-07-24 092135" src="https://github.com/user-attachments/assets/965f162c-35d9-4533-be80-954e90b03fc1" /> <img width="468" height="229" alt="Captura de pantalla 2025-07-24 092033" src="https://github.com/user-attachments/assets/47e0c15c-2de7-44cb-9614-8599d4a483e7" />
 
 ---
 
