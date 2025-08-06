@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curious Facts</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="./Assets/img/Moon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="container-luna">
+            <div id="moon"></div>
+            
+        <h1>CURIOUS FACTS</h1>
+
+    <section class="container" id="home-page">
+        <h2>Did you know?</h2>
+        <section class ="curiousfact"> <p id="fact">Click in Next to go to the next fact.</p> </section>
+        <section class="buttons"><button class="button" id="btnRefresh">Next Fact</button> <button class="button" id="btnFavorite">Like Fact</button></section>
+    </section>
+    <section class ="favorites">
+        <h2><a class="link-favorites" href="#favorites">Go to My Favorite Facts</a></h2>
+    </section>
+    
+    <section class ="favorites-page" id="favorites-page" style="display: none;">
+    <ul id="favorites-list"></ul>
+    <section class="buttons"><button class="button"><a href="#home-page"> Back to Homepage</a></button></section>
+    </section>
+           
+     </main>
+     <script src="/js/app.js"></script>
+</body>
+</html>
